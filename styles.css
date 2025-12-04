@@ -1,5 +1,218 @@
+/*------------------------------------------------ global settings -----------------------------------------*/
+
+:root {
+  --default-text-color-white: #fcfdff;
+  --default-text-color-blue: #274592;
+  --default-text-color-footer-nav-titles-light-blue: #4566a7;
+  --default-background-color: #f0f4f9;
+  --background-color-blue: #214196;
+  --default-line-height: 1.5rem;
+  --default-gap: 2rem;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.wrapper {
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.section-wrapper {
+  max-width: 1200px;
+  min-height: 500px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--default-text-color-white);
+}
+
+/* ---------------------------------------------- header & main ---------------------------------------------------*/
+
+main {
+  background-image: url(./images/main-background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 15rem;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  height: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  color: var(--default-text-color-white);
+  padding: 10rem 2rem;
+  gap: var(--default-gap);
+}
+
+.heading h1 {
+  font-size: 8rem;
+  font-weight: 500;
+  line-height: 0.8;
+}
+
+.title p {
+  width: 60%;
+  line-height: var(--default-line-height);
+}
+
+/*--------------------------------------------- mission section ----------------------------------------*/
+
+.mission {
+  background-color: var(--default-background-color);
+}
+
+.mission-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 16rem 2rem;
+  place-items: center start;
+  gap: var(--default-gap);
+}
+
+.l-side h2 {
+  font-size: 4rem;
+  width: 60%;
+  color: var(--default-text-color-blue);
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.l-side button {
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  border: 2px solid var(--default-text-color-blue);
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--default-text-color-blue);
+}
+
+.r-side {
+  position: relative;
+  color: var(--default-text-color-blue);
+  line-height: var(--default-line-height);
+}
+
+.r-side::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--default-text-color-blue);
+  border-radius: 10px;
+}
+
+.r-side {
+  display: grid;
+  gap: 3rem;
+}
+
+.r-side h4 {
+  padding-bottom: 0.5rem;
+}
+
+/*----------------------------------------- benefits section --------------------------------------------------*/
+
+.benefits {
+  background-image: url(./images/benefits-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: var(--default-text-color-white);
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16rem 2rem;
+  gap: var(--default-gap);
+  justify-content: center;
+  flex: 1;
+}
+
+.benefits h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  width: 30%;
+}
+
+.benefits p {
+  width: 30%;
+  line-height: var(--default-line-height);
+}
+
+/*--------------------------------------------- news section ------------------------------------------------------*/
+
+.news {
+  background-color: var(--default-background-color);
+  color: var(--default-text-color-blue);
+}
+
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.news-title {
+  font-size: 4rem;
+  font-weight: 500;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.news-item {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.news-item img {
+  width: 280px;
+  height: 175px;
+  object-fit: cover;
+  padding-left: 2rem;
+}
+
+.news-date {
+  font-size: 0.8rem;
+}
+
+.news-content h3 {
+  font-size: 1.2rem;
+  width: 60%;
+}
+
+/*--------------------------------------------------- footer ----------------------------------------------------*/
+
+/*--------------------------------------- responsive ------------------------------------------------------------*/
